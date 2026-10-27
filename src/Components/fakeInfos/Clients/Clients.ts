@@ -3,7 +3,7 @@ export const Clients = [
         nome: "Ana Maria",
         servico: "corte e alisamento",
         hora: "09:00",
-        status: "Pendente"
+        status: "Confirmado"
     },
     {
         nome: "Alisson",
@@ -15,7 +15,7 @@ export const Clients = [
         nome: "Ana Maria",
         servico: "corte e alisamento",
         hora: "08:00",
-        status: "Pendente"
+        status: "Confirmado"
     },
     {
         nome: "Ana Maria",

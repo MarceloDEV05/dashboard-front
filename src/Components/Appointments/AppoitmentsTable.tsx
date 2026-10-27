@@ -1,10 +1,12 @@
 import { Search } from "lucide-react";
 import { Clients } from "../fakeInfos/Clients/Clients.ts";
 
+
 export const AppointmentsTable = () => {
   return (
-    <div className="border h-full p-3 flex flex-col gap-5 rounded-2xl">
-      <div className="flex gap-3 p-2 border rounded-xl">
+    <div className="pb-10">
+    <section className="border border-gray-300 p-3 flex flex-col gap-5 rounded-2xl">
+      <div className="flex gap-3 p-2 border border-gray-300 rounded-xl">
         <Search />
         <input
           type="search"
@@ -13,21 +15,22 @@ export const AppointmentsTable = () => {
         />
       </div>
       {Clients.map((client) => (
-        <div
+        <article
           key={`${client.nome}-${client.hora}`}
-          className="flex w-full items-center justify-between border-y px-3 py-3"
+          className="flex flex-wrap border border-gray-100 rounded-xl w-full items-center justify-between px-5 py-5"
         >
-          <div>
-            <h1>{client.nome}</h1>
-            <p>{client.servico}</p>
+          <div className="p-3">
+            <h1 className="font-semibold text-xl text-gray-600">{client.nome}</h1>
+            <p className="text-gray-400">{client.servico}</p>
           </div>
 
           <div>
-            <p>{client.hora}</p>
-            <span>{client.status}</span>
+            <p className="font-bold text-gray-500">{client.hora}</p>
+            <span className={`rounded-xl font-semibold    ${client.status === "Confirmado" ? "bg-green-100 text-green-700 p-1" : "bg-orange-100 text-orange-700 p-1"}`}>{client.status}</span>
           </div>
-        </div>
+        </article>
       ))}
+    </section>
     </div>
   );
 };

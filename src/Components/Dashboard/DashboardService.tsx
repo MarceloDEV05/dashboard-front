@@ -8,8 +8,8 @@ const services = [
 
 export const DashboardService = () => {
   return (
-    <div className="pt-5">
-      <section className="border border-gray-300 rounded-xl">
+    <div className="pt-5 pb-4">
+      <section className="border border-gray-300 rounded-xl p-5">
         <p className="font-semibold text-xl p-2">Serviços mais procurados</p>
         {services.map((service) => (
             <div>
