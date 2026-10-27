@@ -1,36 +1,12 @@
-const appointments = [
-  {
-    id: 1,
-    time: "17:00",
-    client: "Mario Sergio",
-    service: "Corte degradê",
-    barber: "Gustavo",
-    status: "Confirmado",
-  },
-  {
-    id: 2,
-    time: "18:00",
-    client: "Marcelo Cardoso",
-    service: "Corte + Barba",
-    barber: "Guilherme",
-    status: "Confirmado",
-  },
-  {
-    id: 3,
-    time: "19:00",
-    client: "Lucas Cardiel",
-    service: "Corte Social",
-    barber: "Guilherme",
-    status: "Aguardando",
-  },
-];
+import { Clients } from "../fakeInfos/Clients/Clients";
+
 
 export const DashboardAppointments = () => {
   return (
     <div className="pt-5">
       <section className="border rounded-xl border-gray-300">
         <p className="font-semibold text-2xl p-2">Proximos Agendamentos</p>
-        {appointments.map((appointment) => (
+        {Clients.map((appointment) => (
           <article
             key={appointment.id}
             className="flex flex-wrap items-center justify-between
