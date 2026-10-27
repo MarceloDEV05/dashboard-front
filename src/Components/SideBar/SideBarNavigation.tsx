@@ -24,7 +24,7 @@ const navigationItems: {
 
 export const SideBarNavigation = () => {
   return (
-    <ul className="flex h-full flex-col gap-5 pt-40">
+    <ul className="flex h-full flex-col gap-5 pt-10">
       {navigationItems.map(({ to, label, icon: Icon }) => (
         <li key={to}>
           <Link to={to} className="flex items-center gap-1">

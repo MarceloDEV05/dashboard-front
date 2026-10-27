@@ -9,8 +9,8 @@ export const SideBar = () => {
     <aside className="min-h-screen w-60 bg-gray-950 text-white">
       <div className="flex flex-col justify-between py-4 items-center">
         <div className="flex flex-col items-center">
-          <h1 className="p-8 text-3xl">
-            <Link to="/">MYDASH</Link>
+          <h1 className="p-2 text-3xl">
+            <Link to="/">BarberClub`s</Link>
             <p className="text-xs">by SalesTech</p>
           </h1>
 
